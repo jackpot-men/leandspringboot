@@ -1,0 +1,33 @@
+# yml为springboot的配置文件
+#项目可以再不同的环境下读取不同的yml文件
+#application-dev.yml 开发环境。 application-test.yml测试环境 application-prod.myl生产环境。
+spring:
+  profiles:
+    active: test
+  #数据源设置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testdb?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: li741737751
+  #JPA设置
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  #redis设置
+  redis:
+    host: localhost
+    port: 6379
+    database: 1
+    pool:
+      max-idle: 500
+      max-active: 8
+      max-wait: -1
+
+
+#Actuator
+management:
+  server:
+    port: 9001
+

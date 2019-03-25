@@ -1,0 +1,12 @@
+1.先在pom.xml下引入依赖
+
+2.SpringbootApplication 是程序的启动类，主要注解包含了
+  2.1@SpringBootConfiguration
+  2.2@EnableAutoConfiguration
+  2.3@ComponentScan
+
+
+3.springboot 整合JPA。
+
+
+4.springboot 整合redis、

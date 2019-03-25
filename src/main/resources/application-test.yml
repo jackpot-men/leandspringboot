@@ -1,0 +1,8 @@
+
+my:
+  name: lsz
+  age: 26
+  greeting: hi,i'm ${my.name}
+
+server:
+  port: 8080
